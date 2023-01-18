@@ -19,7 +19,6 @@ on:
  
 jobs:
   greet-users:
-    # Job name is Greeting
     name: Greeting
     # This job runs on Linux
     runs-on: self-hosted
