@@ -1,12 +1,11 @@
 name: 05-2. Hello World Composite
 
 on:
-  push:
   workflow_dispatch:
 
 jobs:
   hello_world_job1:
-    runs-on: self-hosted
+    runs-on: [self-hosted]
     name: A job1 to say hello
     steps:
       - id: hello-world

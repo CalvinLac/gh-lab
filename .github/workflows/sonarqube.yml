@@ -1,7 +1,6 @@
 name: SonarQube analysis
 
 on:
-  push:
   workflow_dispatch:
 
 permissions:
@@ -9,7 +8,7 @@ permissions:
 
 jobs:
   Analysis:
-    runs-on: self-hosted
+    runs-on: [self-hosted]
 
     steps:
       - name: Analyze with SonarQube

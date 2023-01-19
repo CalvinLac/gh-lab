@@ -1,7 +1,6 @@
 name: 02-2. Dependencies 
 
 on:
-  push:
   workflow_dispatch:
   # push:
   #   branches:
@@ -9,6 +8,6 @@ on:
     
 jobs:
   initial:
-    runs-on: self-hosted
+    runs-on: [self-hosted]
     steps:
       - run: echo "This job will be run first."
